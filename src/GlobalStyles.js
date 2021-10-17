@@ -54,6 +54,12 @@ const GlobalStyle = createGlobalStyle
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
+
+    .aligning{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
 `;
  
 export default GlobalStyle;
