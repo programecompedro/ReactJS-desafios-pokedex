@@ -1,13 +1,14 @@
-import { Fragment } from "react";
 import GlobalStyles from './GlobalStyles';
 import ListaPokemon from "./ListaPokemon/ListaPokemon";
+import '@fontsource/roboto/500.css';
+import { Container } from "@material-ui/core";
 
 function App() {
   return (
-    <Fragment>
+    <Container maxWidth="md">
       <GlobalStyles />
       <ListaPokemon />
-    </Fragment> 
+    </Container> 
   );
 }
 

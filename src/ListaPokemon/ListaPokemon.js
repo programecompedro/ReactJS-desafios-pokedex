@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PokemonThumbnail from '../PokemonThumbnail/PokemonThumbnail';
+import Typography from '@material-ui/core/Typography';
+import { Button } from '@material-ui/core';
 
 const ListaPokemon = () => {
 
@@ -30,11 +32,11 @@ const ListaPokemon = () => {
         getAllPokemons()
     }, [])
     return (
-        <div className="app-container">
-            <h1>Lista de pokemons</h1>
+        <div className="">
+           <Typography variant="h4" m="2" component="h1" align="center">Lista de pokemons</Typography>
 
-            <div className="pokemon-container">
-                <div className="all-containers">
+            <div className="">
+                <div className="">
                     { allPokemons.map((pokemon, index) =>
                         <PokemonThumbnail 
                         id={pokemon.id}
@@ -45,7 +47,8 @@ const ListaPokemon = () => {
                         />
                     ) }
                 </div>
-                <button className="load-more" onClick={() => getAllPokemons()}>Carregar mais</button>
+                <Button variant="contained"onClick={() => getAllPokemons()}>Carregar mais</Button>
+
             </div>
         </div>
     )
