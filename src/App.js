@@ -1,15 +1,13 @@
 import { Fragment } from "react";
 import GlobalStyles from './GlobalStyles';
-import Button from '@material-ui/core/Button';
+import ListaPokemon from "./ListaPokemon/ListaPokemon";
 
 function App() {
   return (
     <Fragment>
       <GlobalStyles />
-      <Button variant="contained" color="primary">
-        Hello World
-      </Button>
-    </Fragment>
+      <ListaPokemon />
+    </Fragment> 
   );
 }
 
